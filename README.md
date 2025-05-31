@@ -1,6 +1,13 @@
 # 🖥️ Windows Domain Tools
 
+![Windows 10+](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows&logoColor=white)
+![Tested](https://img.shields.io/badge/Tested-Yes-brightgreen)
+![Shell](https://img.shields.io/badge/Shell-Batch%20Script-lightgrey)
+![License](https://img.shields.io/github/license/Emslyyy/windows-domain-tools)
+
 A set of automation scripts to assist with domain join, unjoin, and user/admin verification on Windows 10/11 machines. Ideal for sysadmins managing Active Directory environments.
+
+---
 
 ## 📂 Included Scripts
 
@@ -34,6 +41,16 @@ Checks if the machine is joined to a specific domain and verifies if a domain us
 - Confirms current domain membership.
 - Checks if the user is in the local Administrators group.
 - Optionally verify multiple users in a single session.
+
+---
+
+## 📊 Feature Comparison
+
+| Script Name                | Joins Domain | Unjoins Domain | Adds Admin | Removes Admin | Verifies Admin | Auto-Restarts |
+|---------------------------|--------------|----------------|------------|----------------|----------------|----------------|
+| `JoinDomainAddLocalAdmin` | ✅           | ❌             | ✅         | ❌             | ✅             | ✅             |
+| `UnjoinDomainRemoveAdmins`| ❌           | ✅             | ❌         | ✅             | ❌             | ✅             |
+| `VerifyDomainAndAdmin`    | ❌           | ❌             | ❌         | ❌             | ✅             | ❌             |
 
 ---
 
